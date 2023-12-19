@@ -1,0 +1,16 @@
+D:\Workspace\GiaodienSonNumber\SonNumber\bin\Debug\SonNumber.exe.config
+D:\Workspace\GiaodienSonNumber\SonNumber\bin\Debug\SonNumber.exe
+D:\Workspace\GiaodienSonNumber\SonNumber\bin\Debug\SonNumber.pdb
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.csproj.AssemblyReference.cache
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.Properties.Resources.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.csproj.GenerateResource.cache
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.csproj.CoreCompileInputs.cache
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.exe
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.pdb
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fLogin.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fHethongchung.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fDoitac.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fSanpham.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fDoanhthu.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fHoadon.resources
+D:\Workspace\GiaodienSonNumber\SonNumber\obj\Debug\SonNumber.fMatkhau.resources
