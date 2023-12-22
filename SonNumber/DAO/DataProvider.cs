@@ -13,7 +13,7 @@ namespace SonNumber.DAO
     {
        private static DataProvider instance; // phím tắt đóng gói ctrl + r + e và đặt con trỏ vào vtri cần đóng gói
 
-       private string connectionSTR = @"Data Source=LAPTOP-CUA-KIEN\SQLEXPRESS;Initial Catalog=QuanLyBanSon;Integrated Security=True";
+        private string connectionSTR = @"Data Source=LAPTOP-CUA-KIEN\SQLEXPRESS;Initial Catalog=QuanLyBanSon;Integrated Security=True;";
 
         public static DataProvider Instance
         { 

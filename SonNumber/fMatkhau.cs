@@ -34,7 +34,7 @@ namespace SonNumber
         }
         void UpdateAccountInfo()
         {
-            
+
             string ten = txbTennguoisudung.Text;
             string matkhau = txbMKcu.Text;
             string matkhaumoi = txbMKmoi.Text;
@@ -47,19 +47,20 @@ namespace SonNumber
             }
             else
             {
-                if(AccountDAO.Instance.UpdateAccount(tennguoidung, ten, matkhau, matkhaumoi))
+                if (AccountDAO.Instance.UpdateAccount(tennguoidung, ten, matkhau, matkhaumoi))
                 {
                     MessageBox.Show("Cập nhật thành công!");
-                    if(updateAccount != null)
+                    if (updateAccount != null)
                     {
-                        updateAccount(this, new AccountEvent(AccountDAO.Instance.GetDangnhapByTennguoidung(ten)));
+                        updateAccount(this, new AccountEvent(AccountDAO.Instance.GetDangnhapByTennguoidung(tennguoidung)));
+
                     }
                 }
                 else
                 {
                     MessageBox.Show("vui lòng điền đúng mật khẩu!");
                 }
-            }    
+            }
         }
         private event EventHandler<AccountEvent> updateAccount;
         public event EventHandler<AccountEvent> UpdateAccount

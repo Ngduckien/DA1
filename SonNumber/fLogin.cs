@@ -57,5 +57,13 @@ namespace SonNumber
         {
             Application.Exit();
         }
+
+        private void cxbAnHien_CheckedChanged(object sender, EventArgs e)
+        {
+            if (cxbAnHien.Checked)
+                txbMatkhau.UseSystemPasswordChar = false;
+            if (!cxbAnHien.Checked)
+                txbMatkhau.UseSystemPasswordChar = true;
+        }
     }
 }

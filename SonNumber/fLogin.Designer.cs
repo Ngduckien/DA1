@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.cxbAnHien = new System.Windows.Forms.CheckBox();
             this.labTen = new System.Windows.Forms.Label();
             this.btnExit = new System.Windows.Forms.Button();
@@ -37,15 +38,12 @@
             this.txbTaikhoan = new System.Windows.Forms.TextBox();
             this.lbmatkhau = new System.Windows.Forms.Label();
             this.lbtaikhoan = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
-            this.panel1.Controls.Add(this.dateTimePicker1);
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.cxbAnHien);
             this.panel1.Controls.Add(this.labTen);
@@ -60,6 +58,16 @@
             this.panel1.Size = new System.Drawing.Size(1061, 487);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::SonNumber.Properties.Resources.background;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(560, 487);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
+            // 
             // cxbAnHien
             // 
             this.cxbAnHien.AutoSize = true;
@@ -70,6 +78,7 @@
             this.cxbAnHien.TabIndex = 5;
             this.cxbAnHien.Text = "Hiện/Ẩn mật khẩu";
             this.cxbAnHien.UseVisualStyleBackColor = true;
+            this.cxbAnHien.CheckedChanged += new System.EventHandler(this.cxbAnHien_CheckedChanged);
             // 
             // labTen
             // 
@@ -142,23 +151,6 @@
             this.lbtaikhoan.TabIndex = 0;
             this.lbtaikhoan.Text = "Tên đăng nhập:";
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(428, 45);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(200, 22);
-            this.dateTimePicker1.TabIndex = 7;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::SonNumber.Properties.Resources.background;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(560, 487);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
-            // 
             // fLogin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -188,7 +180,6 @@
         private System.Windows.Forms.Label labTen;
         private System.Windows.Forms.CheckBox cxbAnHien;
         private System.Windows.Forms.Button btnExit;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

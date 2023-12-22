@@ -16,38 +16,24 @@ namespace SonNumber
         private Account loginAccount;
 
         public Account LoginAccount
-        { 
-            get { return loginAccount; } 
+        {
+            get { return loginAccount; }
             set { loginAccount = value; changeAccount(loginAccount.Vaitro); }
         }
         public fHethongchung(Account acc)
         {
             InitializeComponent();
 
-            LoginAccount = acc;
+            this.LoginAccount = acc;
         }
 
         void changeAccount(int vaitro)
         {
-            mnuDoanhthu.Enabled = vaitro == 1; 
-            mnSanpham.Enabled = vaitro == 1;
-            xinChàoToolStripMenuItem.Text += "" + LoginAccount.Ten + "!";
+            mnuDoanhthu.Enabled = vaitro == 1;
+            xinchaoToolStripMenuItem.Text = "Xin Chào: "+ LoginAccount.Ten +" !";
         }
 
-        private void mnSanpham_Click(object sender, EventArgs e)
-        {
-            fSanpham f = new fSanpham();
-            f.ShowDialog();
-            this.Show();
-
-        }
-
-        private void mnuDoitac_Click(object sender, EventArgs e)
-        {
-            fDoitac f = new fDoitac(LoginAccount);
-            f.ShowDialog();
-            this.Show();
-        }
+       
 
         private void mnuHoadon_Click(object sender, EventArgs e)
         {
@@ -58,7 +44,7 @@ namespace SonNumber
 
         private void mnuDoanhthu_Click(object sender, EventArgs e)
         {
-            fDoanhthu f =new fDoanhthu();
+            fDoanhthu f = new fDoanhthu();
             f.ShowDialog();
             this.Show();
         }
@@ -79,14 +65,30 @@ namespace SonNumber
         private void capnhatTTToolStripMenuItem_Click(object sender, EventArgs e)
         {
             fMatkhau f = new fMatkhau(LoginAccount);
-            f.UpdateAccount += F_UpdateAccount;
+            f.UpdateAccount += f_UpdateAccount;
+            f.ShowDialog();
+        }
+
+        private void f_UpdateAccount(object sender, AccountEvent e)
+        {
+            xinchaoToolStripMenuItem.Text = "Xin Chào: " + e.Acc.Ten + " !";
+        }
+
+       
+
+        private void đốiTácToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            fDoitac f = new fDoitac(LoginAccount);
             f.ShowDialog();
             this.Show();
         }
 
-        private void F_UpdateAccount(object sender, AccountEvent e)
+        private void CapnhatloaisonToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            xinChàoToolStripMenuItem.Text = "Xin Chào: " + e.Acc.Ten +" !";
+            fSanpham f = new fSanpham();
+            this.Hide();
+            f.ShowDialog();
+            this.Show();
         }
     }
 }

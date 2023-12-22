@@ -38,7 +38,6 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.btnThoatHn = new System.Windows.Forms.Button();
             this.btnIn = new System.Windows.Forms.Button();
-            this.btnLuu = new System.Windows.Forms.Button();
             this.btnHuy = new System.Windows.Forms.Button();
             this.btnThemHN = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
@@ -102,7 +101,6 @@
             this.panBanhang = new System.Windows.Forms.Panel();
             this.btnThoatbanhang = new System.Windows.Forms.Button();
             this.btnInhoadonban = new System.Windows.Forms.Button();
-            this.btnLuuBanhang = new System.Windows.Forms.Button();
             this.btnHuyBanhang = new System.Windows.Forms.Button();
             this.btnThemBanhang = new System.Windows.Forms.Button();
             this.panDulieuhangban = new System.Windows.Forms.Panel();
@@ -243,7 +241,6 @@
             // 
             this.panel2.Controls.Add(this.btnThoatHn);
             this.panel2.Controls.Add(this.btnIn);
-            this.panel2.Controls.Add(this.btnLuu);
             this.panel2.Controls.Add(this.btnHuy);
             this.panel2.Controls.Add(this.btnThemHN);
             this.panel2.Location = new System.Drawing.Point(12, 420);
@@ -269,15 +266,6 @@
             this.btnIn.TabIndex = 0;
             this.btnIn.Text = "In hóa đơn";
             this.btnIn.UseVisualStyleBackColor = true;
-            // 
-            // btnLuu
-            // 
-            this.btnLuu.Location = new System.Drawing.Point(406, 12);
-            this.btnLuu.Name = "btnLuu";
-            this.btnLuu.Size = new System.Drawing.Size(132, 28);
-            this.btnLuu.TabIndex = 0;
-            this.btnLuu.Text = "Lưu";
-            this.btnLuu.UseVisualStyleBackColor = true;
             // 
             // btnHuy
             // 
@@ -840,7 +828,6 @@
             // 
             this.panBanhang.Controls.Add(this.btnThoatbanhang);
             this.panBanhang.Controls.Add(this.btnInhoadonban);
-            this.panBanhang.Controls.Add(this.btnLuuBanhang);
             this.panBanhang.Controls.Add(this.btnHuyBanhang);
             this.panBanhang.Controls.Add(this.btnThemBanhang);
             this.panBanhang.Location = new System.Drawing.Point(6, 418);
@@ -866,15 +853,6 @@
             this.btnInhoadonban.TabIndex = 0;
             this.btnInhoadonban.Text = "In hóa đơn";
             this.btnInhoadonban.UseVisualStyleBackColor = true;
-            // 
-            // btnLuuBanhang
-            // 
-            this.btnLuuBanhang.Location = new System.Drawing.Point(365, 21);
-            this.btnLuuBanhang.Name = "btnLuuBanhang";
-            this.btnLuuBanhang.Size = new System.Drawing.Size(132, 28);
-            this.btnLuuBanhang.TabIndex = 0;
-            this.btnLuuBanhang.Text = "Lưu";
-            this.btnLuuBanhang.UseVisualStyleBackColor = true;
             // 
             // btnHuyBanhang
             // 
@@ -1165,7 +1143,6 @@
         private System.Windows.Forms.TextBox txbThanhtien;
         private System.Windows.Forms.Label labThanhtien;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Button btnLuu;
         private System.Windows.Forms.Button btnHuy;
         private System.Windows.Forms.Button btnThemHN;
         private System.Windows.Forms.Button btnThoatHn;
@@ -1209,7 +1186,6 @@
         private System.Windows.Forms.Panel panBanhang;
         private System.Windows.Forms.Button btnThoatbanhang;
         private System.Windows.Forms.Button btnInhoadonban;
-        private System.Windows.Forms.Button btnLuuBanhang;
         private System.Windows.Forms.Button btnHuyBanhang;
         private System.Windows.Forms.Button btnThemBanhang;
         private System.Windows.Forms.Panel panTimkiemBanhang;

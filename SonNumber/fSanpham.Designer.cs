@@ -34,7 +34,6 @@
             this.btnThemDM = new System.Windows.Forms.Button();
             this.btnSuaDM = new System.Windows.Forms.Button();
             this.btnXoaDM = new System.Windows.Forms.Button();
-            this.btnLuuDM = new System.Windows.Forms.Button();
             this.btnThoatDM = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.dataGridViewDMHH = new System.Windows.Forms.DataGridView();
@@ -48,7 +47,6 @@
             this.labTDHH = new System.Windows.Forms.Label();
             this.panel11 = new System.Windows.Forms.Panel();
             this.btnThoathh = new System.Windows.Forms.Button();
-            this.btnLuuhh = new System.Windows.Forms.Button();
             this.btnXoahh = new System.Windows.Forms.Button();
             this.btnSuahh = new System.Windows.Forms.Button();
             this.btnTimkiemhh = new System.Windows.Forms.Button();
@@ -56,22 +54,22 @@
             this.panel10 = new System.Windows.Forms.Panel();
             this.dataGridViewMathang = new System.Windows.Forms.DataGridView();
             this.panel9 = new System.Windows.Forms.Panel();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txbSoluong = new System.Windows.Forms.TextBox();
             this.labSL = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txbGiaban = new System.Windows.Forms.TextBox();
             this.labGiaban = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txbGianhap = new System.Windows.Forms.TextBox();
             this.labGianhap = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.cBxTendanhmuc = new System.Windows.Forms.ComboBox();
+            this.txbTendanhmuchh = new System.Windows.Forms.TextBox();
             this.labTenD = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txbTenHH = new System.Windows.Forms.TextBox();
             this.labTenhh = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txbMahh = new System.Windows.Forms.TextBox();
             this.labMahh = new System.Windows.Forms.Label();
             this.tabSanpham.SuspendLayout();
             this.tabDMHangHoa.SuspendLayout();
@@ -108,7 +106,6 @@
             this.tabDMHangHoa.Controls.Add(this.btnThemDM);
             this.tabDMHangHoa.Controls.Add(this.btnSuaDM);
             this.tabDMHangHoa.Controls.Add(this.btnXoaDM);
-            this.tabDMHangHoa.Controls.Add(this.btnLuuDM);
             this.tabDMHangHoa.Controls.Add(this.btnThoatDM);
             this.tabDMHangHoa.Controls.Add(this.panel3);
             this.tabDMHangHoa.Controls.Add(this.panel2);
@@ -132,43 +129,37 @@
             // 
             // btnThemDM
             // 
-            this.btnThemDM.Location = new System.Drawing.Point(405, 415);
+            this.btnThemDM.Location = new System.Drawing.Point(464, 415);
             this.btnThemDM.Name = "btnThemDM";
             this.btnThemDM.Size = new System.Drawing.Size(99, 75);
             this.btnThemDM.TabIndex = 4;
             this.btnThemDM.Text = "Thêm";
             this.btnThemDM.UseVisualStyleBackColor = true;
+            this.btnThemDM.Click += new System.EventHandler(this.btnThemDM_Click);
             // 
             // btnSuaDM
             // 
-            this.btnSuaDM.Location = new System.Drawing.Point(405, 536);
+            this.btnSuaDM.Location = new System.Drawing.Point(464, 527);
             this.btnSuaDM.Name = "btnSuaDM";
             this.btnSuaDM.Size = new System.Drawing.Size(99, 75);
             this.btnSuaDM.TabIndex = 4;
             this.btnSuaDM.Text = "Sửa";
             this.btnSuaDM.UseVisualStyleBackColor = true;
+            this.btnSuaDM.Click += new System.EventHandler(this.btnSuaDM_Click);
             // 
             // btnXoaDM
             // 
-            this.btnXoaDM.Location = new System.Drawing.Point(577, 415);
+            this.btnXoaDM.Location = new System.Drawing.Point(679, 536);
             this.btnXoaDM.Name = "btnXoaDM";
             this.btnXoaDM.Size = new System.Drawing.Size(99, 75);
             this.btnXoaDM.TabIndex = 4;
             this.btnXoaDM.Text = "Xóa";
             this.btnXoaDM.UseVisualStyleBackColor = true;
-            // 
-            // btnLuuDM
-            // 
-            this.btnLuuDM.Location = new System.Drawing.Point(577, 536);
-            this.btnLuuDM.Name = "btnLuuDM";
-            this.btnLuuDM.Size = new System.Drawing.Size(99, 75);
-            this.btnLuuDM.TabIndex = 4;
-            this.btnLuuDM.Text = "Lưu";
-            this.btnLuuDM.UseVisualStyleBackColor = true;
+            this.btnXoaDM.Click += new System.EventHandler(this.btnXoaDM_Click);
             // 
             // btnThoatDM
             // 
-            this.btnThoatDM.Location = new System.Drawing.Point(748, 536);
+            this.btnThoatDM.Location = new System.Drawing.Point(679, 415);
             this.btnThoatDM.Name = "btnThoatDM";
             this.btnThoatDM.Size = new System.Drawing.Size(99, 75);
             this.btnThoatDM.TabIndex = 4;
@@ -245,7 +236,6 @@
             this.txbMaDM.Location = new System.Drawing.Point(168, 12);
             this.txbMaDM.Multiline = true;
             this.txbMaDM.Name = "txbMaDM";
-            this.txbMaDM.ReadOnly = true;
             this.txbMaDM.Size = new System.Drawing.Size(216, 31);
             this.txbMaDM.TabIndex = 1;
             // 
@@ -281,7 +271,6 @@
             // panel11
             // 
             this.panel11.Controls.Add(this.btnThoathh);
-            this.panel11.Controls.Add(this.btnLuuhh);
             this.panel11.Controls.Add(this.btnXoahh);
             this.panel11.Controls.Add(this.btnSuahh);
             this.panel11.Controls.Add(this.btnTimkiemhh);
@@ -300,15 +289,6 @@
             this.btnThoathh.Text = "Thoát";
             this.btnThoathh.UseVisualStyleBackColor = true;
             this.btnThoathh.Click += new System.EventHandler(this.btnThoathh_Click);
-            // 
-            // btnLuuhh
-            // 
-            this.btnLuuhh.Location = new System.Drawing.Point(388, 17);
-            this.btnLuuhh.Name = "btnLuuhh";
-            this.btnLuuhh.Size = new System.Drawing.Size(108, 32);
-            this.btnLuuhh.TabIndex = 0;
-            this.btnLuuhh.Text = "Lưu";
-            this.btnLuuhh.UseVisualStyleBackColor = true;
             // 
             // btnXoahh
             // 
@@ -345,6 +325,7 @@
             this.btnThemhh.TabIndex = 0;
             this.btnThemhh.Text = "Thêm";
             this.btnThemhh.UseVisualStyleBackColor = true;
+            this.btnThemhh.Click += new System.EventHandler(this.btnThemhh_Click);
             // 
             // panel10
             // 
@@ -366,20 +347,21 @@
             // 
             // panel9
             // 
-            this.panel9.Controls.Add(this.textBox6);
+            this.panel9.Controls.Add(this.txbSoluong);
             this.panel9.Controls.Add(this.labSL);
             this.panel9.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel9.Location = new System.Drawing.Point(519, 221);
+            this.panel9.Location = new System.Drawing.Point(528, 221);
             this.panel9.Name = "panel9";
             this.panel9.Size = new System.Drawing.Size(326, 44);
             this.panel9.TabIndex = 0;
             // 
-            // textBox6
+            // txbSoluong
             // 
-            this.textBox6.Location = new System.Drawing.Point(109, 8);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(200, 25);
-            this.textBox6.TabIndex = 1;
+            this.txbSoluong.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbSoluong.Location = new System.Drawing.Point(84, 8);
+            this.txbSoluong.Name = "txbSoluong";
+            this.txbSoluong.Size = new System.Drawing.Size(225, 25);
+            this.txbSoluong.TabIndex = 1;
             // 
             // labSL
             // 
@@ -393,20 +375,21 @@
             // 
             // panel8
             // 
-            this.panel8.Controls.Add(this.textBox5);
+            this.panel8.Controls.Add(this.txbGiaban);
             this.panel8.Controls.Add(this.labGiaban);
             this.panel8.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel8.Location = new System.Drawing.Point(519, 89);
+            this.panel8.Location = new System.Drawing.Point(528, 89);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(326, 44);
             this.panel8.TabIndex = 0;
             // 
-            // textBox5
+            // txbGiaban
             // 
-            this.textBox5.Location = new System.Drawing.Point(84, 8);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(225, 25);
-            this.textBox5.TabIndex = 1;
+            this.txbGiaban.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGiaban.Location = new System.Drawing.Point(84, 8);
+            this.txbGiaban.Name = "txbGiaban";
+            this.txbGiaban.Size = new System.Drawing.Size(225, 25);
+            this.txbGiaban.TabIndex = 1;
             // 
             // labGiaban
             // 
@@ -420,20 +403,21 @@
             // 
             // panel7
             // 
-            this.panel7.Controls.Add(this.textBox4);
+            this.panel7.Controls.Add(this.txbGianhap);
             this.panel7.Controls.Add(this.labGianhap);
             this.panel7.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel7.Location = new System.Drawing.Point(519, 155);
+            this.panel7.Location = new System.Drawing.Point(528, 155);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(326, 44);
             this.panel7.TabIndex = 0;
             // 
-            // textBox4
+            // txbGianhap
             // 
-            this.textBox4.Location = new System.Drawing.Point(84, 11);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(225, 25);
-            this.textBox4.TabIndex = 1;
+            this.txbGianhap.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbGianhap.Location = new System.Drawing.Point(84, 11);
+            this.txbGianhap.Name = "txbGianhap";
+            this.txbGianhap.Size = new System.Drawing.Size(225, 25);
+            this.txbGianhap.TabIndex = 1;
             // 
             // labGianhap
             // 
@@ -447,21 +431,21 @@
             // 
             // panel6
             // 
-            this.panel6.Controls.Add(this.cBxTendanhmuc);
+            this.panel6.Controls.Add(this.txbTendanhmuchh);
             this.panel6.Controls.Add(this.labTenD);
             this.panel6.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel6.Location = new System.Drawing.Point(29, 221);
+            this.panel6.Location = new System.Drawing.Point(31, 221);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(354, 44);
             this.panel6.TabIndex = 0;
             // 
-            // cBxTendanhmuc
+            // txbTendanhmuchh
             // 
-            this.cBxTendanhmuc.FormattingEnabled = true;
-            this.cBxTendanhmuc.Location = new System.Drawing.Point(117, 8);
-            this.cBxTendanhmuc.Name = "cBxTendanhmuc";
-            this.cBxTendanhmuc.Size = new System.Drawing.Size(225, 26);
-            this.cBxTendanhmuc.TabIndex = 1;
+            this.txbTendanhmuchh.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTendanhmuchh.Location = new System.Drawing.Point(117, 10);
+            this.txbTendanhmuchh.Name = "txbTendanhmuchh";
+            this.txbTendanhmuchh.Size = new System.Drawing.Size(225, 25);
+            this.txbTendanhmuchh.TabIndex = 1;
             // 
             // labTenD
             // 
@@ -475,20 +459,21 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.textBox2);
+            this.panel5.Controls.Add(this.txbTenHH);
             this.panel5.Controls.Add(this.labTenhh);
             this.panel5.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel5.Location = new System.Drawing.Point(29, 155);
+            this.panel5.Location = new System.Drawing.Point(31, 155);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(354, 44);
             this.panel5.TabIndex = 0;
             // 
-            // textBox2
+            // txbTenHH
             // 
-            this.textBox2.Location = new System.Drawing.Point(117, 8);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(225, 25);
-            this.textBox2.TabIndex = 1;
+            this.txbTenHH.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbTenHH.Location = new System.Drawing.Point(117, 8);
+            this.txbTenHH.Name = "txbTenHH";
+            this.txbTenHH.Size = new System.Drawing.Size(225, 25);
+            this.txbTenHH.TabIndex = 1;
             // 
             // labTenhh
             // 
@@ -502,21 +487,21 @@
             // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Controls.Add(this.txbMahh);
             this.panel4.Controls.Add(this.labMahh);
             this.panel4.Font = new System.Drawing.Font("Tempus Sans ITC", 8.25F);
-            this.panel4.Location = new System.Drawing.Point(29, 89);
+            this.panel4.Location = new System.Drawing.Point(31, 89);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(354, 44);
             this.panel4.TabIndex = 0;
             // 
-            // textBox1
+            // txbMahh
             // 
-            this.textBox1.Location = new System.Drawing.Point(117, 8);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(225, 25);
-            this.textBox1.TabIndex = 1;
+            this.txbMahh.Font = new System.Drawing.Font("Times New Roman", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txbMahh.Location = new System.Drawing.Point(117, 8);
+            this.txbMahh.Name = "txbMahh";
+            this.txbMahh.Size = new System.Drawing.Size(225, 25);
+            this.txbMahh.TabIndex = 1;
             // 
             // labMahh
             // 
@@ -581,27 +566,26 @@
         private System.Windows.Forms.Button btnThemDM;
         private System.Windows.Forms.Button btnSuaDM;
         private System.Windows.Forms.Button btnXoaDM;
-        private System.Windows.Forms.Button btnLuuDM;
         private System.Windows.Forms.Button btnThoatDM;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.DataGridView dataGridViewDMHH;
         private System.Windows.Forms.Label labNhande;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txbMahh;
         private System.Windows.Forms.Label labMahh;
         private System.Windows.Forms.Panel panel9;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txbSoluong;
         private System.Windows.Forms.Label labSL;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txbGiaban;
         private System.Windows.Forms.Label labGiaban;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txbGianhap;
         private System.Windows.Forms.Label labGianhap;
         private System.Windows.Forms.Panel panel6;
         private System.Windows.Forms.Label labTenD;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.TextBox txbTenHH;
         private System.Windows.Forms.Label labTenhh;
         private System.Windows.Forms.Panel panel11;
         private System.Windows.Forms.Button btnXoahh;
@@ -611,8 +595,7 @@
         private System.Windows.Forms.Panel panel10;
         private System.Windows.Forms.DataGridView dataGridViewMathang;
         private System.Windows.Forms.Button btnThoathh;
-        private System.Windows.Forms.Button btnLuuhh;
         private System.Windows.Forms.Label labTDHH;
-        private System.Windows.Forms.ComboBox cBxTendanhmuc;
+        private System.Windows.Forms.TextBox txbTendanhmuchh;
     }
 }

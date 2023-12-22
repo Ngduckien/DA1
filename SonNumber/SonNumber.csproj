@@ -48,7 +48,13 @@
   <ItemGroup>
     <Compile Include="DAO\AccountDAO.cs" />
     <Compile Include="DAO\DataProvider.cs" />
+    <Compile Include="DAO\HanghoaDAO.cs" />
+    <Compile Include="DAO\DanhmucDAO.cs" />
+    <Compile Include="DAO\NhanvienDAO.cs" />
     <Compile Include="DTO\Account.cs" />
+    <Compile Include="DTO\Hanghoa.cs" />
+    <Compile Include="DTO\Danhmuc.cs" />
+    <Compile Include="DTO\Nhanvien.cs" />
     <Compile Include="fDoanhthu.cs">
       <SubType>Form</SubType>
     </Compile>
